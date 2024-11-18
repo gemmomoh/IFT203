@@ -1,8 +1,8 @@
 body{
-    background:linear-gradient(to right, purple, black)
+    background:linear-gradient(to right, purple, black);
 }
 header{
-    background:linear-gradient(to right, white, indigo)
+    background:linear-gradient(to right, white, indigo);
     padding:5px;
 }
 header nav{
@@ -14,7 +14,7 @@ header nav ul li {
 
 }
 header nav ul li a{
-    text.decoration: none;
+    text-decoration: none;
     margin-right: 5px;
-    color:white 
+    color:white;
 }
