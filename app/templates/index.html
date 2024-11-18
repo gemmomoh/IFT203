@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}"
+
+</head>
+<body id="body">
+   <header id="header">
+    <nav>
+        <ul>
+            <li><a href="{{url_for('faculty.get_faculty_list')}}">Faculty</a></li>
+            <li><a href="#">Department</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Level</a></li>
+            <li><a href="#">Course</a></li>
+            <li><a href="#">Group</a></li>
+            <li><a href="#">Student</a></li>
+            <li><a href="#">Assign Student to Group</a></li>
+        
+        </ul>
+    </nav>
+   </header>
+
+   <liv>
+   {% block content %}
+
+   {% endblock %}
+   </liv>
+
+   <footer>
+    <p>Nile University Software Engineering Student</p>
+   </footer>
+
+</body>
+</html>
+
+{% extends "base.html" }
