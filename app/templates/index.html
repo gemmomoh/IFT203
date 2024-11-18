@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>{% block title %} {% endblock %}</title>
-<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}"
+
+    <link rel="stylesheet" href="../static/css/styles.css">
 
 </head>
+
 <body id="body">
    <header id="header">
     <nav>
         <ul>
-            <li><a href="{{url_for('faculty.get_faculty_list')}}">Faculty</a></li>
+            <li><a href="{{url_for('faculty.get_faculty_list')}}">Faculty</a></1i>
             <li><a href="#">Department</a></li>
             <li><a href="#">Program</a></li>
             <li><a href="#">Level</a></li>
@@ -23,18 +29,20 @@
         </ul>
     </nav>
    </header>
+   <div>
+    {% block content %}
 
-   <liv>
-   {% block content %}
-
-   {% endblock %}
-   </liv>
+        hello man
+        
+    {% endblock %}
+</div>
+</body>
 
    <footer>
     <p>Nile University Software Engineering Student</p>
    </footer>
 
-</body>
+
 </html>
 
-{% extends "base.html" }
+
