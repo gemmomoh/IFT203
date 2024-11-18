@@ -1,0 +1,20 @@
+body{
+    background:linear-gradient(to right, purple, black)
+}
+header{
+    background:linear-gradient(to right, white, indigo)
+    padding:5px;
+}
+header nav{
+    text-align:center;
+}
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+
+}
+header nav ul li a{
+    text.decoration: none;
+    margin-right: 5px;
+    color:white 
+}
